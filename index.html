@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#010101] text-white font-sans">
+    <!-- Navbar -->
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center justify-between p-4 sm:p-6 lg:px-8">
+        <div class="flex flex-1">
+          <a href="#" class="p-1.5">
+            <h2 class="text-white font-bold text-lg sm:text-xl font-[Orbitron]">
+              Light
+            </h2>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            class="p-2.5 text-white"
+            onclick="document.getElementById('mobile-menu').showModal()"
+          >
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="#" class="text-sm font-semibold">Home</a>
+          <a href="#" class="text-sm font-semibold">Company</a>
+          <a href="#" class="text-sm font-semibold">Features</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a
+            href="#"
+            class="text-sm font-semibold bg-[#B936F5] px-4 py-2 rounded-lg"
+            >Log in</a
+          >
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <dialog id="mobile-menu" class="backdrop:bg-black/50 lg:hidden">
+        <div class="fixed inset-0 flex justify-end">
+          <div
+            class="w-3/4 max-w-sm bg-[#010101] text-white p-6 space-y-6"
+          >
+            <div class="flex items-center justify-between">
+              <h3 class="font-bold text-lg">Light</h3>
+              <button
+                onclick="document.getElementById('mobile-menu').close()"
+                class="p-2.5"
+              >
+                <i class="fa-solid fa-circle-xmark"></i>
+              </button>
+            </div>
+            <nav class="space-y-4">
+              <a href="#" class="block">Home</a>
+              <a href="#" class="block">Company</a>
+              <a href="#" class="block">Features</a>
+              <a
+                href="#"
+                class="block bg-[#B936F5] text-center rounded-md py-2"
+                >Log in</a
+              >
+            </nav>
+          </div>
+        </div>
+      </dialog>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="container mx-auto px-4 pt-28 sm:pt-36 lg:px-20 flex flex-col-reverse lg:grid lg:grid-cols-5 lg:items-center gap-10"
+    >
+      <div class="lg:col-span-2 space-y-6 font-[Orbitron]">
+        <h1 class="font-semibold text-3xl sm:text-5xl">Let’s Explore</h1>
+        <h1 class="font-semibold text-3xl sm:text-5xl">
+          Three-Dimensional
+        </h1>
+        <h1 class="font-semibold text-3xl sm:text-5xl">Visual</h1>
+        <p class="text-gray-400 text-base sm:text-lg max-w-md">
+          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+          cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="#"
+            class="bg-[#B936F5] px-5 py-2 rounded-md font-semibold hover:bg-indigo-500"
+            >Get started</a
+          >
+          <a href="#" class="font-semibold">Learn more →</a>
+        </div>
+      </div>
+      <div class="lg:col-span-3 flex justify-center">
+        <img
+          src="./assets/Group 23.svg"
+          class="w-full max-w-xs sm:max-w-md lg:max-w-full"
+          alt="3D Visual"
+        />
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <section
+      class="py-16 px-4 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+    >
+      <div class="flex justify-center gap-4">
+        <img src="assets/Group 3.png" class="w-1/2 object-contain" alt="" />
+        <img
+          src="./assets/Group 28.png"
+          class="w-1/2 object-contain translate-y-5 sm:translate-y-10"
+          alt=""
+        />
+      </div>
+
+      <div class="space-y-6 text-center lg:text-left font-[Orbitron]">
+        <h1 class="font-semibold text-2xl sm:text-4xl lg:text-5xl">
+          New Experience In Playing Game
+        </h1>
+        <p class="text-gray-400 max-w-md mx-auto lg:mx-0">
+          You can try playing the game with a new style and of course a more real
+          feel, like you are the main character in your game and adventure in this
+          new digital world.
+        </p>
+        <a
+          href="#"
+          class="bg-[#B936F5] px-6 py-2 rounded-md font-semibold hover:bg-indigo-500"
+          >Get started</a
+        >
+      </div>
+    </section>
+
+    <!-- Aside -->
+    <aside
+      class="flex flex-col gap-5 md:flex-row justify-between items-center font-[Orbitron] p-6 sm:p-8 bg-[#534686] text-lg sm:text-2xl lg:text-3xl rounded-tr-[50px]"
+    >
+      <h2 class="text-center md:text-left">
+        Awesome experiences with virtual reality world
+      </h2>
+      <img src="./assets/aside.png" class="w-32 sm:w-40 lg:w-48" alt="" />
+    </aside>
+
+    <!-- Images Section -->
+    <section class="my-10 sm:my-20">
+      <h1 class="m-4 mb-10 text-2xl sm:text-4xl font-[Orbitron]">
+        Mixed Reality Headsets
+      </h1>
+      <div
+        class="grid grid-cols-2 gap-6 sm:gap-8 justify-center items-center mx-4 sm:mx-10 md:mx-20"
+      >
+        <img
+          src="./assets/img1.svg"
+          class="col-span-2 md:col-span-1 w-full md:w-3/4 ml-auto"
+        />
+        <img
+          src="./assets/img2.svg"
+          class="col-span-2 md:col-span-1 w-full md:w-3/4 mr-auto"
+        />
+        <img
+          src="./assets/img3.svg"
+          class="col-span-2 md:col-span-1 w-full md:w-3/4 ml-auto"
+        />
+        <img
+          src="./assets/img4.svg"
+          class="col-span-2 md:col-span-1 w-full md:w-3/4 mr-auto"
+        />
+      </div>
+    </section>
+
+    <!-- Company Values -->
+    <section class="grid grid-cols-1 md:grid-cols-5 gap-6 m-6">
+      <div class="md:col-span-3">
+        <h2 class="text-2xl sm:text-4xl font-[Orbitron] mb-5">
+          Our company values culture
+        </h2>
+        <p class="text-gray-400 text-base sm:text-lg">
+          We specialize in creating visual identities for products and brands in
+          your company.
+        </p>
+      </div>
+
+      <div class="md:col-span-2">
+        <div class="grid grid-cols-2 gap-5">
+          <div class="text-center">
+            <img class="m-auto h-10" src="./assets/svg1.svg" />
+            <p>Be Sincere</p>
+          </div>
+          <div class="text-center">
+            <img class="m-auto h-10" src="./assets/svg2.svg" />
+            <p>Be Sincere</p>
+          </div>
+          <div class="text-center">
+            <img class="m-auto h-10" src="./assets/svg3.svg" />
+            <p>Be Sincere</p>
+          </div>
+          <div class="text-center">
+            <img class="m-auto h-10" src="./assets/svg4.svg" />
+            <p>Be Sincere</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-10">
+      <section
+        class="grid grid-cols-1 md:grid-cols-5 gap-10 m-6 sm:m-10 bg-gradient-to-r from-[#320746] to-[#13051E] p-6 sm:p-10 rounded-xl"
+      >
+        <div class="md:col-span-3 space-y-4">
+          <h2 class="text-2xl sm:text-4xl font-[Orbitron]">
+            Explore product in new way
+          </h2>
+          <p class="text-gray-400 text-base sm:text-lg">
+            We specialize in creating visual identities for products and brands in
+            your company.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input
+              type="text"
+              class="px-4 py-2 rounded-lg border border-[#B936F5] w-full sm:w-auto"
+              placeholder="Enter email"
+            />
+            <a
+              href="#"
+              class="bg-[#B936F5] px-6 py-2 rounded-md font-semibold hover:bg-indigo-500 text-center"
+              >Get started</a
+            >
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <img
+            src="./assets/footer.png"
+            class="w-full rounded-2xl"
+            alt=""
+          />
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
